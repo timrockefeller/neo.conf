@@ -4,7 +4,7 @@ vim.api.nvim_command('let &packpath = &runtimepath')
 local opt = vim.opt
 
 opt.number = true
-opt.relativenumber = true
+--opt.relativenumber = true
 
 vim.scriptencoding = 'utf-8'
 opt.encoding = 'utf-8'
@@ -14,7 +14,7 @@ opt.scrolloff = 5
 opt.sidescrolloff = 5
 
 opt.hlsearch = true
-opt.incsearch = true 
+opt.incsearch = true
 opt.mouse = 'a'
 opt.clipboard:append('unnamedplus')
 
