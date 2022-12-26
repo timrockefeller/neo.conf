@@ -38,6 +38,10 @@ return require('packer').startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
     use {
+        'echasnovski/mini.nvim',
+        branch = 'stable'
+    }
+    use {
         "uga-rosa/ccc.nvim"
     }
     -- theme

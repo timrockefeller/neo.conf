@@ -37,7 +37,11 @@ require('telescope').setup {
         -- }
         -- Now the picker_config_key will be applied every time you call this
         -- builtin picker
+        find_files = {
+            theme = "dropdown"
+        }
     },
+    previewers = {},
     extensions = {
         -- Your extension configuration goes here:
         -- extension_name = {
@@ -63,5 +67,5 @@ vim.keymap.set('', '<leader>f', function()
 end, { remap = true })
 
 vim.keymap.set('', '<leader>F', function()
-    hop.hint_lines_skip_whitespace({})
+    hop.hint_vertical({})
 end, { remap = true })
