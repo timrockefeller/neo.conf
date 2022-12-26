@@ -44,6 +44,10 @@ return require('packer').startup(function(use)
         'echasnovski/mini.nvim',
         branch = 'stable'
     }
+    use({
+        "Pocco81/true-zen.nvim",
+        config = function() require("true-zen").setup() end,
+    })
     use {
         "uga-rosa/ccc.nvim"
     }
