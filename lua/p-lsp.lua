@@ -40,7 +40,7 @@ local on_attach = function(_, bufnr)
         end
     })
 end
-
+--[[
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lsp_config = {
     on_attach = function(_, bufnr)
@@ -65,3 +65,4 @@ require("mason-lspconfig").setup_handlers({
         )
     end
 })
+]]
