@@ -1,8 +1,4 @@
---vim.cmd('colorscheme neonwave')
-
---vim.g.everforest_diagnostic_line_highlight = 1
---vim.cmd('colorscheme everforest')
-
+vim.opt.termguicolors = true
 vim.cmd('colorscheme shado')
 
 vim.fn.sign_define({

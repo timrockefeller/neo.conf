@@ -7,6 +7,7 @@ keymap.set('n', '<c-a>', 'gg<S-v>G')
 keymap.set('n', 'F', ':vsplit<Return><C-w>w', { silent = true })
 keymap.set('n', 'f', '<C-w>w')
 keymap.set('n', '<C-Tab>', '<cmd>bn<cr>')
+keymap.set('n', '<S-Tab>', '<cmd>bn<cr>')
 
 keymap.set('n', 'H', '^')
 keymap.set('n', 'L', '$')
