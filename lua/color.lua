@@ -1,5 +1,6 @@
 vim.opt.termguicolors = true
 vim.cmd('colorscheme shado')
+--vim.cmd('hi Normal guibg=NONE')
 
 vim.fn.sign_define({
     {
@@ -30,3 +31,18 @@ vim.fn.sign_define({
 })
 
 require("ccc").setup()
+
+
+require("transparent").setup({
+    enable = true,
+    extra_groups = {
+        --"BufferLineTabClose",
+        --"BufferlineBufferSelected",
+        "BufferLineFill",
+        "BufferLineBackground",
+        "BufferLineSeparator",
+        "BufferLineIndicatorSelected",
+    },
+    exclude = {},
+    ignore_linked_group = true
+})

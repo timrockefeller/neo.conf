@@ -54,7 +54,8 @@ return require('packer').startup(function(use)
     -- theme
     use {
         'sainnhe/everforest',
-        'Shadorain/shadotheme'
+        'Shadorain/shadotheme',
+        'xiyaowong/nvim-transparent'
     }
     -- text
     use {
