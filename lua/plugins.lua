@@ -65,4 +65,5 @@ return require('packer').startup(function(use)
         'gcmt/wildfire.vim',
         'tpope/vim-surround'
     }
+    use 'voldikss/vim-floaterm'
 end)
