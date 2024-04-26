@@ -12,13 +12,21 @@ return require('packer').startup(function(use)
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
     }
-    --[[use {
+
+    use("simrat39/rust-tools.nvim")
+
+    -- debug start
+    use 'puremourning/vimspector'
+    use 'mfussenegger/nvim-dap'
+    -- debug end
+
+    use {
         'hrsh7th/cmp-nvim-lsp',
         'hrsh7th/cmp-buffer',
         'hrsh7th/cmp-path',
         'hrsh7th/cmp-cmdline',
         'hrsh7th/nvim-cmp'
-    }]]
+    }
     use {
         "L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"
     }
